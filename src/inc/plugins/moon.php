@@ -1,14 +1,14 @@
 <?php
 /**
- * Weather
- * Adds user-submitted weather feed.
+ * Moon
+ * Adds user-submitted moon feed.
  *
- * @package  Shinka\Weather
+ * @package  Shinka\Moon
  * @category MyBB Plugins
  * @author   Kalyn Robinson <dev@shinkarpg.com>
  * @license  http://unlicense.org/ Unlicense
  * @version  1.0.0
- * @link     https://github.com/ShinkaBB/mybb-weather
+ * @link     https://github.com/ShinkaBB/mybb-moon
  */
 
 if (!defined('IN_MYBB')) {
@@ -16,22 +16,22 @@ if (!defined('IN_MYBB')) {
 }
 
 if (defined('IN_ADMINCP')) {
-    require_once MYBB_ROOT . 'inc/plugins/Shinka/Weather/src/Plugin.php';
+    require_once MYBB_ROOT . 'inc/plugins/Shinka/Moon/src/Plugin.php';
 } else {
-    require_once MYBB_ROOT . 'inc/plugins/Shinka/Weather/src/Forum.php';
+    require_once MYBB_ROOT . 'inc/plugins/Shinka/Moon/src/Forum.php';
 }
 
 defined('MYBBSTUFF_CORE_PATH') or define('MYBBSTUFF_CORE_PATH', MYBB_ROOT . 'inc/plugins/MybbStuff/Core');
 defined('SHINKA_CORE_PATH') or define('SHINKA_CORE_PATH', MYBB_ROOT . 'inc/plugins/Shinka/Core');
-define('SHINKA_WEATHER_PATH', MYBB_ROOT . 'inc/plugins/Shinka/Weather');
+define('SHINKA_MOON_PATH', MYBB_ROOT . 'inc/plugins/Shinka/Moon');
 
 require_once MYBBSTUFF_CORE_PATH . '/ClassLoader.php';
 
 $classLoader = new MybbStuff_Core_ClassLoader();
 
 $classLoader->registerNamespace(
-    'Shinka_Weather',
-    array(SHINKA_WEATHER_PATH . '/src')
+    'Shinka_Moon',
+    array(SHINKA_MOON_PATH . '/src')
 );
 
 $classLoader->registerNamespace(
