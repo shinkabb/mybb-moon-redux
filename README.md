@@ -1,13 +1,9 @@
-# News
-
-Call out important threads with a terse headline and description.
+# Moon Phase
+Provides moon phase data for use in index templates.
 
 ## Installation
 
 Download the [latest release](https://github.com/shinkabb/mybb-moon-redux/releases) and unzip in the root of your MyBB installation.
-
-# Moon Phase
-Provides moon phase data for use in index templates.
 
 ## Usage
 | Variable               | Description                       | Example         |
